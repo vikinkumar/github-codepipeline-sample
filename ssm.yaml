@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   DevBucketName:
     Type: String
-    Default: dev-bucket
+    Default: dev-bucket-1
 
 Resources:
   #Create Bucket name in SSM Parameter Store    
