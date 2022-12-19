@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  DevBucketName:
+    Type: String
+    Default: dev-bucket
+
+Resources:
+  #Create Bucket name in SSM Parameter Store    
+  BucketNameParamater:
+    Type: AWS::SSM::Parameter
+    Properties: 
+      Description: WebsiteBucket S3 bucket
+      Name: WebsiteBucket
+      Type: String
+      Value: !Ref DevBucketName
