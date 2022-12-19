@@ -1,0 +1,11 @@
+version: "0.2"
+phases:
+  install:
+    runtime-version:
+      nodejs: latest
+      python: 3.8
+    commands:
+      - echo "Nothing happens here"
+artifacts:
+  files:
+    - '**/*'
